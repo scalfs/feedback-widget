@@ -16,7 +16,10 @@ routes.post("/feedbacks", async (req, res) => {
     nodemailerMailAdapter
   );
 
-  await submitFeedbackUseCase.execute({ type, comment, screenshot });
-
-  return res.status(201).send();
+  try {
+    await submitFeedbackUseCase.execute({ type, comment, screenshot });
+    return res.status(201).send();
+  } catch (error) {
+    return res.status(500).send();
+  }
 });
