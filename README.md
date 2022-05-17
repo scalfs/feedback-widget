@@ -117,11 +117,6 @@ $ expo start
 # Connect your phone or start a emulator
 ```
 
-## Roadmap
-
-- [x] Light/Dark modes
-- [] Build a Dashboard, for visualizing all received feedbacks
-
 ## License
 
 This project is distributed under the MIT License. See the [LICENSE](LICENSE.md) file for more details.
