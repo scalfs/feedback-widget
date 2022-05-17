@@ -42,7 +42,7 @@ export function WidgetForm() {
   };
 
   return (
-    <div className="bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
+    <div className="bg-white dark:bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
       {feedbackSent ? (
         <FeedbackSuccessStep onFeedbackRestartRequest={handleRestartFeedback} />
       ) : !feedbackType ? (
@@ -54,7 +54,7 @@ export function WidgetForm() {
           onFeedbackSent={() => setFeedbackSent(true)}
         />
       )}
-      <footer className="text-xs text-neutral-400">
+      <footer className="text-xs dark:text-neutral-400 text-neutral-500">
         Made with ♥ by{" "}
         <a
           href="https://rocketseat.com.br"
